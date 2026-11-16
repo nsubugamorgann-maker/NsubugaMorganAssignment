@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student ICT Training Centre</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body id="top">
+
+    <header>
+        <h1>ISBAT University</h1>
+        <p>Student ICT Training Centre</p>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About Us</a>
+        <a href="#courses">Courses</a>
+        <a href="#timetable">Timetable</a>
+        <a href="#registration">Registration</a>
+    </nav>
+
+    <main>
+        <section class="intro" id="home">
+            <h2>Learn practical technology skills</h2>
+            <p>Choose a course and build skills for your future.</p>
+            <a class="button" href="#courses">See our courses</a>
+        </section>
+
+        <section class="section" id="about">
+            <h2>About Us</h2>
+            <div class="about">
+                <div>
+                    <p>The ISBAT University Student ICT Training Centre helps students learn useful computer and technology skills.</p>
+                    <p>Students get to practise what they learn in courses such as web development, networking, databases and cybersecurity.</p>
+                </div>
+                <img class="photo" src="support-photo.jpg" alt="Students and an instructor learning together around a computer">
+            </div>
+        </section>
+
+        <section class="section light" id="courses">
+            <h2>Courses</h2>
+
+            <h3>Available Training Programmes</h3>
+            <ul>
+                <li>Web Development</li>
+                <li>Computer Networking</li>
+                <li>Database Management</li>
+                <li>Cybersecurity</li>
+            </ul>
+
+            <h3>Steps to Register</h3>
+            <ol>
+                <li>Read about the courses.</li>
+                <li>Choose a course and study mode.</li>
+                <li>Fill in the registration form.</li>
+                <li>Submit the form.</li>
+            </ol>
+
+            <h3>Course Details</h3>
+            <div class="courses">
+                <article class="course">
+                    <span class="label">Register Now</span>
+                    <h3>Web Development</h3>
+                    <p>Learn how to make webpages using HTML and CSS.</p>
+                </article>
+                <article class="course">
+                    <h3>Computer Networking</h3>
+                    <p>Learn how computers connect and share information.</p>
+                </article>
+                <article class="course">
+                    <h3>Database Management</h3>
+                    <p>Learn how information can be stored and organised.</p>
+                </article>
+                <article class="course">
+                    <h3>Cybersecurity</h3>
+                    <p>Learn basic ways to keep computers and information safe.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="section" id="timetable">
+            <h2>Weekly Training Timetable</h2>
+            <div class="table-scroll">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Day</th>
+                            <th>Course</th>
+                            <th>Time</th>
+                            <th>Instructor</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Monday</td>
+                            <td>Web Development</td>
+                            <td>9:00 AM - 11:00 AM</td>
+                            <td>Ms. Nakato</td>
+                        </tr>
+                        <tr>
+                            <td>Tuesday</td>
+                            <td>Computer Networking</td>
+                            <td>10:00 AM - 12:00 PM</td>
+                            <td>Mr. Okello</td>
+                        </tr>
+                        <tr>
+                            <td>Wednesday</td>
+                            <td>Database Management</td>
+                            <td>1:00 PM - 3:00 PM</td>
+                            <td>Ms. Achieng</td>
+                        </tr>
+                        <tr>
+                            <td>Thursday</td>
+                            <td>Cybersecurity</td>
+                            <td>9:00 AM - 11:00 AM</td>
+                            <td>Mr. Ssemanda</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p class="note">This is a sample timetable for the student project.</p>
+        </section>
+
+        <section class="section light" id="registration">
+            <h2>Student Registration</h2>
+            <p>Enter your details and choose the course you would like to study.</p>
+
+            <form action="#registration" method="post">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="number">Student Number</label>
+                <input type="text" id="number" name="number" required>
+
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required>
+
+                <p>Gender</p>
+                <label class="choice"><input type="radio" name="gender" value="female"> Female</label>
+                <label class="choice"><input type="radio" name="gender" value="male"> Male</label>
+                <label class="choice"><input type="radio" name="gender" value="prefer-not-to-say"> Prefer not to say</label>
+
+                <label for="course-choice">Preferred Course</label>
+                <select id="course-choice" name="course" required>
+                    <option value="">Choose a course</option>
+                    <option>Web Development</option>
+                    <option>Computer Networking</option>
+                    <option>Database Management</option>
+                    <option>Cybersecurity</option>
+                </select>
+
+                <p>Study Mode</p>
+                <label class="choice"><input type="radio" name="study-mode" value="in-person" required> In person</label>
+                <label class="choice"><input type="radio" name="study-mode" value="online"> Online</label>
+                <label class="choice"><input type="radio" name="study-mode" value="hybrid"> Hybrid</label>
+
+                <label for="comments">Additional Comments</label>
+                <textarea id="comments" name="comments" rows="4"></textarea>
+
+                <label class="choice"><input type="checkbox" name="contact"> I agree to be contacted about this course.</label>
+
+                <div class="buttons">
+                    <button type="submit">Submit Registration</button>
+                    <button type="reset" class="reset">Reset Form</button>
+                </div>
+                <p class="note">This sample form does not send or save your information.</p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 ISBAT University Student ICT Training Centre</p>
+    </footer>
+
+    <a class="back" href="#top">Back to Top</a>
+
+</body>
+</html>

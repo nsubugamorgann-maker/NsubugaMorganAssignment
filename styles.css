@@ -1,0 +1,306 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 70px;
+}
+
+body {
+    margin: 0;
+    color: #263746;
+    background-color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+
+/* Header at the top of the page */
+header {
+    padding: 20px;
+    text-align: center;
+    color: #17324d;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+header p {
+    margin: 4px 0 0;
+}
+
+
+/* Navigation links */
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #17324d;
+}
+
+nav a {
+    padding: 14px 16px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #2463a5;
+}
+
+
+/* Welcome section */
+.intro {
+    padding: 65px 20px;
+    text-align: center;
+    background-color: #e9f2fa;
+}
+
+.intro h2 {
+    margin: 0 0 10px;
+    color: #17324d;
+    font-size: 36px;
+}
+
+.intro p {
+    margin: 0 0 22px;
+}
+
+.button,
+button {
+    display: inline-block;
+    border: 0;
+    border-radius: 5px;
+    padding: 11px 18px;
+    color: #ffffff;
+    background-color: #2463a5;
+    font: inherit;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.button:hover,
+button:hover {
+    background-color: #174878;
+}
+
+
+/* Main page sections */
+.section {
+    padding: 50px max(20px, calc((100% - 1000px) / 2));
+    scroll-margin-top: 65px;
+}
+
+.section h2 {
+    margin-top: 0;
+    color: #17324d;
+    font-size: 30px;
+}
+
+.section h3 {
+    margin-top: 26px;
+    color: #17324d;
+}
+
+.light {
+    background-color: #f5f8fa;
+}
+
+
+/* About Us photo and text */
+.about {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.about div,
+.photo {
+    width: 50%;
+}
+
+.photo {
+    display: block;
+    border-radius: 8px;
+}
+
+
+/* Course cards */
+.courses {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+}
+
+.course {
+    position: relative;
+    min-height: 140px;
+    padding: 20px;
+    border: 1px solid #d5dee6;
+    border-radius: 7px;
+    background-color: #ffffff;
+}
+
+.course h3 {
+    margin-top: 0;
+}
+
+.label {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 5px 9px;
+    border-radius: 0 6px 0 6px;
+    color: #ffffff;
+    background-color: #2463a5;
+    font-size: 13px;
+}
+
+.course:first-child {
+    padding-top: 42px;
+}
+
+
+/* Timetable */
+.table-scroll {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+}
+
+th,
+td {
+    padding: 12px;
+    border: 1px solid #d5dee6;
+    text-align: left;
+}
+
+th {
+    color: #ffffff;
+    background-color: #17324d;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f0f5f9;
+}
+
+.note {
+    color: #5e6d79;
+    font-size: 14px;
+}
+
+
+/* Registration form */
+form {
+    max-width: 700px;
+}
+
+form > label,
+form > p {
+    display: block;
+    margin: 16px 0 5px;
+    color: #17324d;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 12px;
+    padding: 10px;
+    border: 1px solid #b8c5d0;
+    border-radius: 5px;
+    background-color: #ffffff;
+    font: inherit;
+}
+
+.choice {
+    display: inline-block;
+    margin: 4px 12px 8px 0;
+    color: #263746;
+    font-weight: normal;
+}
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 16px;
+}
+
+.reset {
+    border: 1px solid #2463a5;
+    color: #2463a5;
+    background-color: #ffffff;
+}
+
+.reset:hover {
+    color: #ffffff;
+}
+
+
+/* Bottom of the page */
+footer {
+    padding: 20px;
+    color: #ffffff;
+    background-color: #17324d;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+.back {
+    position: fixed;
+    right: 16px;
+    bottom: 16px;
+    padding: 9px 12px;
+    border-radius: 5px;
+    color: #ffffff;
+    background-color: #2463a5;
+    text-decoration: none;
+}
+
+
+/* Adjust the page for phones */
+@media (max-width: 600px) {
+    .intro h2 {
+        font-size: 28px;
+    }
+
+    .section {
+        padding: 38px 18px;
+    }
+
+    .about {
+        display: block;
+    }
+
+    .about div,
+    .photo {
+        width: 100%;
+    }
+
+    .photo {
+        margin-top: 18px;
+    }
+
+    .courses {
+        grid-template-columns: 1fr;
+    }
+}
